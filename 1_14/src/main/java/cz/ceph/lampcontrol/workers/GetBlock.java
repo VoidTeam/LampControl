@@ -1,11 +1,7 @@
 package cz.ceph.lampcontrol.workers;
 
-import cz.ceph.lampcontrol.LampControl;
-import net.royawesome.jlibnoise.module.combiner.Power;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.BlockState;
-import org.bukkit.block.data.BlockData;
 import org.bukkit.block.data.Lightable;
 import org.bukkit.block.data.Powerable;
 import org.bukkit.event.player.PlayerInteractEvent;

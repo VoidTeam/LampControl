@@ -4,8 +4,6 @@ import cz.ceph.lampcontrol.LampControl;
 import org.bukkit.Material;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 import static cz.ceph.lampcontrol.LampControl.getMain;
@@ -80,4 +78,3 @@ public class MainConfig extends BaseConfiguration {
         cachedBooleanValues.clear();
     }
 }
-

@@ -5,6 +5,8 @@ package cz.ceph.lampcontrol.commands.core;
  */
 
 public class CommandException extends Exception {
+    private static final long serialVersionUID = -8469200816781637106L;
+
     public CommandException(String message) {
         super(message);
     }

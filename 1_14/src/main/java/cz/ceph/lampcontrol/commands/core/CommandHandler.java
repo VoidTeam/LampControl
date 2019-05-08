@@ -51,6 +51,7 @@ public class CommandHandler implements CommandExecutor, ICommandHandler {
     public void loadCommands(Class<?> mainClass) {
         try {
             JarFile jarFile = new JarFile(new File(mainClass.getProtectionDomain().getCodeSource().getLocation().toURI()));
+
             List<JarEntry> entries = Collections.list(jarFile.entries());
             entries.forEach(jarEntry -> {
                 try {
@@ -70,6 +71,8 @@ public class CommandHandler implements CommandExecutor, ICommandHandler {
                     e.printStackTrace();
                 }
             });
+
+            jarFile.close();
         } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
         }
